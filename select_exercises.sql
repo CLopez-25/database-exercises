@@ -8,9 +8,13 @@ SELECT album_name FROM albums WHERE artist_name = 'Pink Floyd';
 SELECT 'Sgt. Pepper Release Year' AS 'query two';
 SELECT release_date FROM albums WHERE album_name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
+# Nevermind genre.
+SELECT 'Nevermind Genre' AS 'query three';
+SELECT genre FROM albums WHERE album_name = 'Nevermind';
+
 # Which albums were released in the 1990s.
 SELECT 'Albums Released in the 1990s' AS 'query three';
-SELECT * FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT * FROM albums WHERE release_date BETWEEN 1990 AND 2000 ORDER BY release_date;
 
 # Which albums had less than 20 million certified sales.
 SELECT 'Albums with less than 20 million certified sales' AS 'query four';
