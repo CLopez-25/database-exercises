@@ -36,3 +36,6 @@ SELECT * FROM employees WHERE birth_date LIKE '%-01';
 SELECT * FROM employees WHERE birth_date LIKE '1954-01%' ORDER BY birth_date, last_name LIMIT 50;
 
 SELECT * FROM employees WHERE birth_date LIKE '1954-01%' ORDER BY birth_date, last_name LIMIT 50 OFFSET 50;
+
+# underscore wildcard:
+SELECT * FROM employees WHERE last_name LIKE '__e%' ORDER BY last_name;
