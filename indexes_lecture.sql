@@ -18,3 +18,14 @@ ALTER TABLE salaries DROP INDEX salaries_index;
 
 # ALTER TABLE tbl_name ADD UNIQUE (column_name ...) = the combination of the two becomes unique.
 
+USE codeup_test_db;
+
+SHOW TABLES;
+
+SHOW INDEXES FROM albums;
+
+DESCRIBE albums;
+
+SELECT * FROM albums;
+
+ALTER TABLE albums ADD UNIQUE unique_artist_name (artist_name, album_name);
