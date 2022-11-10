@@ -27,7 +27,7 @@ WHERE de.to_date = '9999-01-01' AND gender = 'F'
 ORDER BY d.dept_name;
 
 # Find the current titles of employees currently working in the Customer Service department.
-
+SELECT 
 
 
 
