@@ -10,3 +10,8 @@ SELECT title FROM titles WHERE emp_no IN (SELECT emp_no FROM employees WHERE fir
 
 # Find all the current department managers that are female.
 SELECT first_name, last_name FROM employees WHERE emp_no IN (SELECT emp_no FROM dept_manager WHERE to_date LIKE '9999%') AND gender = 'F';
+
+# BONUS from Mason:
+# Find the first and last name of the employee with the highest salary.
+SELECT first_name, last_name FROM employees WHERE emp_no IN
+    (SELECT emp_no FROM salaries WHERE (salary IN (SELECT MAX(salary) FROM salaries)));
